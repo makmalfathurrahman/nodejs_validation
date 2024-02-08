@@ -1,0 +1,57 @@
+[
+  {
+    "value": "on",
+    "error": {
+      "_original": "on",
+      "details": [
+        {
+          "message": "\"value\" length must be at least 3 characters long",
+          "path": [],
+          "type": "string.min",
+          "context": { "limit": 3, "value": "on", "label": "value" }
+        }
+      ]
+    }
+  },
+  {
+    "value": "aaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "error": {
+      "_original": "aaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "details": [
+        {
+          "message": "\"value\" length must be less than or equal to 10 characters long",
+          "path": [],
+          "type": "string.max",
+          "context": { "limit": 10, "value": "aaaaaaaaaaaaaaaaaaaaaaaaaaa", "label": "value" }
+        }
+      ]
+    }
+  },
+  {
+    "value": {
+      "username": "hello@email.com",
+      "password": "12345",
+      "address": { "street": "Earth St.", "city": "Earth Town", "country": "Earth" }
+    }
+  },
+  {
+    "value": [
+      { "street": "Earth St.", "city": "Earth Town", "country": "Earth" },
+      { "street": "Mercury St.", "city": "Mercury Town", "country": "Mercury" }
+    ]
+  },
+  {
+    "value": "on",
+    "error": {
+      "_original": "on",
+      "details": [
+        {
+          "message": "\"value\" has to be minimum 3 character",
+          "path": [],
+          "type": "string.min",
+          "context": { "limit": 3, "value": "on", "label": "value" }
+        }
+      ]
+    }
+  }
+]
